@@ -20,6 +20,7 @@ namespace ESBCommunitySite.Controllers
         {
             return View();
         }
+        // CONTACT/MAIL METHODS
         // Contact get method
         [HttpGet]
         public ViewResult Contact()
@@ -34,13 +35,22 @@ namespace ESBCommunitySite.Controllers
             MailBox.AddMail(contactInfo);
             return View();
         }
-
-        public ViewResult ShowMail()
+        // sort mail by date - default get mail; not tested yet
+        public IActionResult GetMail()
         {
-            return View(MailBox.Mail);
+            List<ContactInfo> mail = MailBox.Mail;
+            mail.Sort((m1, m2) => string.Compare(m1.MessageDate, m2.MessageDate, StringComparison.Ordinal));
+            return View(mail);
+        }
+        // sort mail by priority; not tested yet
+        public IActionResult GetPriorityMail()
+        {
+            List<ContactInfo> mail = MailBox.Mail;
+            mail.Sort((m1, m2) => string.Compare(m1.MessagePriority, m2.MessagePriority, StringComparison.Ordinal));
+            return View(mail);
         }
 
-
+        // Error method
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

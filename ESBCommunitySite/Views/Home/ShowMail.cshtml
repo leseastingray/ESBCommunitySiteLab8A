@@ -24,11 +24,17 @@
                 <tr>
                     <td>@r.Recipient</td>
                     <td>@r.MessageText</td>
+                    <td>@r.MessagePriority</td>
                     <td>@r.Sender</td>
+                    <td>@r.MessageDate</td>
                 </tr>
             }
         </tbody>
     </table>
+    <div>
+        <button asp-action="GetPriorityMail" asp-route="r.MessagePriority">Sort Mail by Priority</button>
+        <button asp-action="GetMail" asp-route="r.MessageDate">Sort Mail by Time Sent</button>
+    </div>
 </body>
 </html>
 

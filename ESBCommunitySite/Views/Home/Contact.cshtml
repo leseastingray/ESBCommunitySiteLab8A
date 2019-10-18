@@ -22,6 +22,15 @@
             <textarea asp-for="MessageText"></textarea>
         </div>
         <div>
+            <label>Message Priority</label>
+            <select asp-for="MessagePriority">
+                <option value="0">No Priority</option>
+                <option value="1">Less Priority</option>
+                <option value="2">Some Priority</option>
+                <option value="3">Most Priority</option>
+            </select>
+        </div>
+        <div>
             <label asp-for="Sender">Sender Name</label>
             <input asp-for="Sender" />
         </div>

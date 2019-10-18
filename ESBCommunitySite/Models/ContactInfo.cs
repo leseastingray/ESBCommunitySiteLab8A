@@ -9,5 +9,8 @@ namespace ESBCommunitySite.Models
         public string Recipient { get; set; }
         public string MessageText { get; set; }
         public string Sender { get; set; }
+        //TODO: Just added these two; not tested yet
+        public string MessageDate { get; set; }
+        public string MessagePriority { get; set; }
     }
 }
