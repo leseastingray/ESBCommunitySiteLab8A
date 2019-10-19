@@ -36,16 +36,16 @@ namespace ESBCommunitySite.Controllers
             return View();
         }
         // sort mail by date - default get mail; not tested yet
-        public IActionResult GetMail()
+        public ViewResult GetMail()
         {
-            List<ContactInfo> mail = MailBox.Mail;
+            List<ContactInfo> mail = MailBox.Messages;
             mail.Sort((m1, m2) => string.Compare(m1.MessageDate, m2.MessageDate, StringComparison.Ordinal));
             return View(mail);
         }
         // sort mail by priority; not tested yet
-        public IActionResult GetPriorityMail()
+        public ViewResult GetPriorityMail()
         {
-            List<ContactInfo> mail = MailBox.Mail;
+            List<ContactInfo> mail = MailBox.Messages;
             mail.Sort((m1, m2) => string.Compare(m1.MessagePriority, m2.MessagePriority, StringComparison.Ordinal));
             return View(mail);
         }

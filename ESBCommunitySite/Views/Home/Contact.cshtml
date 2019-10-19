@@ -1,7 +1,6 @@
 ﻿@model ESBCommunitySite.Models.ContactInfo
 
 @{
-    ViewData["Title"] = "Contact";
     Layout = null;
 }
 <! DOCTYPE html>
@@ -10,9 +9,12 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Contact</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
     <form asp-action="Contact" method="post">
+        <div asp-validation-summary="All"></div>
         <div>
             <label asp-for="Recipient">Recipient Name</label>
             <input asp-for="Recipient" />
@@ -25,9 +27,9 @@
             <label>Message Priority</label>
             <select asp-for="MessagePriority">
                 <option value="0">No Priority</option>
-                <option value="1">Less Priority</option>
-                <option value="2">Some Priority</option>
-                <option value="3">Most Priority</option>
+                <option value="1">Low Priority</option>
+                <option value="2">Medium Priority</option>
+                <option value="3">High Priority</option>
             </select>
         </div>
         <div>
@@ -36,7 +38,7 @@
         </div>
         <button type="submit">Send</button>
     </form>
-    <div>Click <a asp-action="ShowMail">here to view your mailbox of sent and
-        received messages</a></div>
+    <div>Click <a asp-action="GetMail">here</a> to view your mailbox of sent and
+        received messages</div>
 </body>
 </html>
