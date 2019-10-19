@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{B7E038DC-4685-4664-8234-6EACAA9E69DF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ESBCommunitySite/Views/Home/GetMail.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ESBCommunitySite/Views/Home/GetPriorityMail.cshtml">
     <Files>
-      <File FileName="ESBCommunitySite/Views/Home/MailBox.cshtml" Line="24" Column="49" />
       <File FileName="ESBCommunitySite/Controllers/HomeController.cs" Line="51" Column="31" />
       <File FileName="ESBCommunitySite/Models/MailBox.cs" Line="1" Column="1" />
-      <File FileName="ESBCommunitySite/Views/Home/Contact.cshtml" Line="37" Column="39" />
-      <File FileName="ESBCommunitySite/Models/ContactInfo.cs" Line="17" Column="50" />
+      <File FileName="ESBCommunitySite/Views/Home/Contact.cshtml" />
+      <File FileName="ESBCommunitySite/Models/ContactInfo.cs" />
+      <File FileName="ESBCommunitySite/Views/Home/GetMail.cshtml" Line="24" Column="21" />
+      <File FileName="ESBCommunitySite/Views/Home/GetPriorityMail.cshtml" Line="22" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +17,7 @@
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True">
-                  <Node name="GetMail.cshtml" selected="True" />
+                  <Node name="GetPriorityMail.cshtml" selected="True" />
                 </Node>
               </Node>
             </Node>
