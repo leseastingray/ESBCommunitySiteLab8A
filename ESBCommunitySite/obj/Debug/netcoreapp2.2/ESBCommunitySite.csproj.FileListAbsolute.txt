@@ -180,4 +180,5 @@ C:/Users/Student/Documents/RiverRay/ESBCommunitySiteLab3A/ESBCommunitySite/obj/D
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.dll
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.pdb
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.csproj.CopyComplete
-/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/MailBox.cshtml.g.cs
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/GetMail.cshtml.g.cs
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/GetPriorityMail.cshtml.g.cs

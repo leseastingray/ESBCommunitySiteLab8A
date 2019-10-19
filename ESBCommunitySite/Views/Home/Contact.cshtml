@@ -36,6 +36,10 @@
             <label asp-for="Sender">Sender Name</label>
             <input asp-for="Sender" />
         </div>
+        <div>
+            <label asp-for="MessageDate">Message Date</label>
+            <input placeholder="@DateTime.Now" asp-for="MessageDate" />
+        </div>
         <button type="submit">Send</button>
     </form>
     <div>Click <a asp-action="GetMail">here</a> to view your mailbox of sent and

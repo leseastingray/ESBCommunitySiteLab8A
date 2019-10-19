@@ -39,7 +39,7 @@ namespace ESBCommunitySite.Controllers
         public ViewResult GetMail()
         {
             List<ContactInfo> mail = MailBox.Messages;
-            mail.Sort((m1, m2) => string.Compare(m1.MessageDate, m2.MessageDate, StringComparison.Ordinal));
+            mail.Sort((m1, m2) => DateTime.Compare(m1.MessageDate, m2.MessageDate));
             return View(mail);
         }
         // sort mail by priority; not tested yet
@@ -47,6 +47,7 @@ namespace ESBCommunitySite.Controllers
         {
             List<ContactInfo> mail = MailBox.Messages;
             mail.Sort((m1, m2) => string.Compare(m1.MessagePriority, m2.MessagePriority, StringComparison.Ordinal));
+            mail.Reverse();
             return View(mail);
         }
 

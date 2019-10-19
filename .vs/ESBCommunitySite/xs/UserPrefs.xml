@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{B7E038DC-4685-4664-8234-6EACAA9E69DF}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ESBCommunitySite/Views/Home/GetMail.cshtml">
     <Files>
-      <File FileName="ESBCommunitySite/Controllers/HomeController.cs" Line="47" Column="10" />
-      <File FileName="ESBCommunitySite/Views/Home/MailBox.cshtml" Line="8" Column="7" />
+      <File FileName="ESBCommunitySite/Views/Home/MailBox.cshtml" Line="24" Column="49" />
+      <File FileName="ESBCommunitySite/Controllers/HomeController.cs" Line="51" Column="31" />
+      <File FileName="ESBCommunitySite/Models/MailBox.cs" Line="1" Column="1" />
+      <File FileName="ESBCommunitySite/Views/Home/Contact.cshtml" Line="37" Column="39" />
+      <File FileName="ESBCommunitySite/Models/ContactInfo.cs" Line="17" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
