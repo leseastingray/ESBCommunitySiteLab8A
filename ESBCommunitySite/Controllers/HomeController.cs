@@ -1,10 +1,8 @@
-﻿using System;
+﻿using ESBCommunitySite.Models;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using ESBCommunitySite.Models;
 
 namespace ESBCommunitySite.Controllers
 {
@@ -32,17 +30,18 @@ namespace ESBCommunitySite.Controllers
         public ViewResult Contact(ContactInfo contactInfo)
         {
             // stores contact messages
+            contactInfo.MessageDate = DateTime.Now;
             MailBox.AddMail(contactInfo);
             return View();
         }
-        // sort mail by date - default get mail; not tested yet
+        // sort mail by date 
         public ViewResult GetMail()
         {
             List<ContactInfo> mail = MailBox.Messages;
             mail.Sort((m1, m2) => DateTime.Compare(m1.MessageDate, m2.MessageDate));
             return View(mail);
         }
-        // sort mail by priority; not tested yet
+        // sort mail by priority
         public ViewResult GetPriorityMail()
         {
             List<ContactInfo> mail = MailBox.Messages;
