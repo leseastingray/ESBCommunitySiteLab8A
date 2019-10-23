@@ -1,7 +1,42 @@
-﻿
+﻿@model ESBCommunitySite.Models.Roster
+
 @{
-    ViewData["Title"] = "Roster";
+    Layout = null;
 }
 
-<h1>Roster</h1>
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Roster</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <nav>
+        <a asp-action="History">History</a>
+        <a asp-action="Contact">Contact</a>
+        <a asp-action="Info">Information</a>
+        <a asp-action="Location">Location</a>
+        <a asp-action="Roster">Roster</a>
+    </nav>
+    <div class="text-center">
+        <h2>Eugene Symphonic Band Roster</h2>
+        <p>Members by Section</p>
+    </div>
+    <div>
+        WORKING ON THIS PART
+        <h4>Flutes</h4>
+        <p>
+            @Model.
+            @foreach (Member fl in Member.)
+            {
+                if (fl.Instrument == "flute")
+                {
+                    @fl.Name
+                    @fl.DateJoined
+                }
+            }
+        </p>
+    </div>
+</body>
+</html>
