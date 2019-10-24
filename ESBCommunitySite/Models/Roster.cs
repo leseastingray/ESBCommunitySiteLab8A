@@ -25,8 +25,8 @@ namespace ESBCommunitySite.Models
             members.Add(member);
         }
 
-        // get array of members (moved from Member.cs; this might not remain
-        public static Member[] GetMembers()
+        // get array of members (moved from Member.cs; this might not remain)
+        public static List<Member> GetMembers()
         {
             Member sCossey = new Member
             {

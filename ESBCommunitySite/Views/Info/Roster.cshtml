@@ -27,8 +27,8 @@
         WORKING ON THIS PART
         <h4>Flutes</h4>
         <p>
-            @Model.
-            @foreach (Member fl in Member.)
+            @(currentRoster = Roster.GetMembers)
+            @foreach (Member fl in currentRoster)
             {
                 if (fl.Instrument == "flute")
                 {
