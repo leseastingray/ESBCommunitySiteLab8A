@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ESBCommunitySite.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ESBCommunitySite.Controllers
@@ -21,7 +22,9 @@ namespace ESBCommunitySite.Controllers
         // Roster method
         public ViewResult Roster()
         {
-            return View();
+            List<Member> currentRoster = new List<Member>();
+            List<Member> flutes = new List <Member>(currentRoster.FilterByInstrument("flute"));
+            return View(flutes);
         }
     }
 }

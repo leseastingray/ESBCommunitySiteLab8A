@@ -1,16 +1,17 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace ESBCommunitySite.Models
 {
-    public class Roster
+    public class Roster : IEnumerable<Member>
     {
         // list for collection of members
         public static List<Member> members = new List<Member>();
 
-        // enable enumeration
+        // enable enumeration (need to add filtering extension)
         public static IEnumerable<Member> Members
         {
             get
@@ -68,7 +69,7 @@ namespace ESBCommunitySite.Models
                 Board = false,
                 SectionLeader = true
             };
-            return new Member[] { sCossey, lBerry, dHolmes, aLese, sMaricle };
+            return new List<Member> { sCossey, lBerry, dHolmes, aLese, sMaricle };
         }
 
         // method to get list of members who play a particular instrument
@@ -85,6 +86,16 @@ namespace ESBCommunitySite.Models
                 }
             }
             return instrumentMembers;
+        }
+
+        IEnumerator<Member> IEnumerable<Member>.GetEnumerator()
+        {
+            return Members.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 }

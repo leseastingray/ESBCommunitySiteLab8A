@@ -24,18 +24,10 @@
         <p>Members by Section</p>
     </div>
     <div>
-        WORKING ON THIS PART
+        WORKING ON THIS PART - GET IT ON THE PAGE
         <h4>Flutes</h4>
         <p>
-            @(currentRoster = Roster.GetMembers)
-            @foreach (Member fl in currentRoster)
-            {
-                if (fl.Instrument == "flute")
-                {
-                    @fl.Name
-                    @fl.DateJoined
-                }
-            }
+            @Model.FilterByInstrument("flute");
         </p>
     </div>
 </body>
