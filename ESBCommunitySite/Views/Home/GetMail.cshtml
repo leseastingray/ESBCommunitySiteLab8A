@@ -1,19 +1,25 @@
 ﻿@model IEnumerable<ESBCommunitySite.Models.ContactInfo>
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Mailbox";
 }
 <! DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>MailBox</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
+    <nav>
+        <a href="Home/History">History</a>
+        <a href="Home/Contact">Contact</a>
+        <a href="Info/">Information</a>
+        <a href="Info/Location">Location</a>
+        <a href="Info/Roster">Roster</a>
+    </nav>
     <div class="panel-body">
-    <h2>Mailbox</h2>
+        <h2>Mailbox</h2>
         <table class="table table-lg table-striped table-bordered">
             <thead>
                 <tr>Recipient</tr>
