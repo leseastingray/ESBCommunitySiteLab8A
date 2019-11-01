@@ -8,22 +8,24 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <title>Roster</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
     <nav>
-        <a href="/Home/Hisory">History</a>
-        <a href="/Home/Contact">Contact</a>
-        <a href="Info/Index">Information</a>
-        <a href="Info/Location">Location</a>
-        <a href="Info/Roster">Roster</a>
+        <a href="Home/History">History</a>
+        <a href="Home/Contact">Contact</a>
+        <a href="/Info/">Information</a>
+        <a href="Location">Location</a>
+        <a href="">Roster</a>
     </nav>
     <div class="text-center">
         <h2>Eugene Symphonic Band Roster</h2>
-        <p>Members by Section</p>
+        <a asp-action="Roster">Members By Section</a>
+        <a asp-action="RosterByJoinDate">Members By Join Date</a>
     </div>
     <div>
-        WORKING ON THIS PART - GET IT ON THE PAGE
+        ROSTER BY INSTRUMENT UNDERCONSTRUCTION. SEE ROSTER BY JOIN DATE
         <h4>Flutes</h4>
         @foreach (Member flute in Model.FilterByInstrument("flute"))
         {
@@ -49,6 +51,15 @@
                 @trumpet.Name
                 <br />
                 @trumpet.DateJoined
+            </p>
+        }
+        <h4>Trombones</h4>
+        @foreach (Member trombone in Model.FilterByInstrument("trombone"))
+        {
+            <p>
+                @trombone.Name
+                <br />
+                @trombone.DateJoined
             </p>
         }
     </div>

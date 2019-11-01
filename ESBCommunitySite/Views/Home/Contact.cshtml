@@ -3,22 +3,16 @@
 @{
     ViewData["Title"] = "Contact";
 }
-<! DOCTYPE html>
 
+<! DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
-    <nav>
-        <a href="Home/History">History</a>
-        <a href="Home/Contact">Contact</a>
-        <a href="Info/">Information</a>
-        <a href="Info/Location">Location</a>
-        <a href="Info/Roster">Roster</a>
-    </nav>
     <form asp-action="Contact" method="post">
         <div asp-validation-summary="All"></div>
         <div>
@@ -45,9 +39,7 @@
 
         <button type="submit">Send</button>
     </form>
-    <div>
-        Click <a asp-action="GetMail">here</a> to view your mailbox of sent and
-        received messages
-    </div>
+    <div>Click <a asp-action="GetMail">here</a> to view your mailbox of sent and
+        received messages</div>
 </body>
 </html>

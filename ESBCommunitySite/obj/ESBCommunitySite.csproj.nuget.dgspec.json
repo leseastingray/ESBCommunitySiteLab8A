@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/ESBCommunitySite.csproj": {}
+    "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab4A/ESBCommunitySite/ESBCommunitySite.csproj": {}
   },
   "projects": {
-    "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/ESBCommunitySite.csproj": {
+    "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab4A/ESBCommunitySite/ESBCommunitySite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/ESBCommunitySite.csproj",
+        "projectUniqueName": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab4A/ESBCommunitySite/ESBCommunitySite.csproj",
         "projectName": "ESBCommunitySite",
-        "projectPath": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/ESBCommunitySite.csproj",
+        "projectPath": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab4A/ESBCommunitySite/ESBCommunitySite.csproj",
         "packagesPath": "/Users/amylese/.nuget/packages/",
-        "outputPath": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab3A/ESBCommunitySite/obj/",
+        "outputPath": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab4A/ESBCommunitySite/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

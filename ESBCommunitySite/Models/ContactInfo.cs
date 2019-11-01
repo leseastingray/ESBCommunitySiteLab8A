@@ -13,7 +13,6 @@ namespace ESBCommunitySite.Models
         [Required(ErrorMessage = "Please enter your name")]
         public string Sender { get; set; }
 
-        //TODO: tweak these?
         public DateTime MessageDate { get; set; }
         public string MessagePriority { get; set; }
 
