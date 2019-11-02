@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
+    <nav>
+        <a asp-action="Index">Home</a>
+        <a asp-action="History">History</a>
+        <a asp-action="Contact">Contact</a>
+        <a href="../Info/Info">Information</a>
+        <a href="../Info/Location">Location</a>
+        <a href="../Info/Roster">Roster</a>
+     </nav>
+    <div class="text-center">
+        <h2>Message Form</h2>
+    </div>
     <form asp-action="Contact" method="post">
         <div asp-validation-summary="All"></div>
         <div>

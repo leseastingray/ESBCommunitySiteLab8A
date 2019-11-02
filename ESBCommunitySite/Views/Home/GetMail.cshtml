@@ -13,13 +13,23 @@
 <body>
     <div class="panel-body">
     <h2>Mailbox</h2>
+    <nav>
+        <a asp-action="Index">Home</a>
+        <a asp-action="History">History</a>
+        <a asp-action="Contact">Contact</a>
+        <a href="../Info/Info">Information</a>
+        <a href="../Info/Location">Location</a>
+        <a href="../Info/Roster">Roster</a>
+    </nav>
         <table class="table table-lg table-striped table-bordered">
             <thead>
-                <tr>Recipient</tr>
-                <tr>Message Content</tr>
-                <tr>Message Priority</tr>
-                <tr>Sender</tr>
-                <tr>Date & Time</tr>
+                <tr>
+                    <th>Recipient</th>
+                    <th>Message Content</th>
+                    <th>Message Priority</th>
+                    <th>Sender</th>
+                    <th>Date & Time</th>
+                </tr>
             </thead>
             <tbody>
                 @foreach (ContactInfo cI in Model)

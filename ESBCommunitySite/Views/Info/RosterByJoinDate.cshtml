@@ -14,9 +14,10 @@
 </head>
 <body>
     <nav>
-        <a href="Home/History">History</a>
-        <a href="Home/Contact">Contact</a>
-        <a href="/Info/">Information</a>
+        <a href="../Home">Home</a>
+        <a href="../Home/History">History</a>
+        <a href="../Home/Contact">Contact</a>
+        <a href="/Info/Info">Information</a>
         <a href="Location">Location</a>
         <a href="">Roster</a>
     </nav>
@@ -29,9 +30,11 @@
         <p>
             <table class="table table-lg table-striped table-bordered">
                 <thead>
-                    <tr>Name</tr>
-                    <tr>Join Date</tr>
-                    <tr>Instrument</tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Join Date</th>
+                        <th>Instrument</th>
+                    </tr>
                 </thead>
                 <tbody>
                         @foreach (Member member in Model)

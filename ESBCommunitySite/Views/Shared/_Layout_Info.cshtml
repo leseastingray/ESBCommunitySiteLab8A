@@ -3,9 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <title>@ViewBag.Title</title>
+    <style>
+        #infoDiv {
+            padding: 20px;
+            border: solid medium;
+            border-color: darkgray;
+            color: darkgreen;
+            font-size: 16pt;
+        }
+    </style>
 </head>
 <body>
-    @RenderBody()
+    <div id="infoDiv"
+        @RenderBody()
+    </div>
 </body>
 </html>
