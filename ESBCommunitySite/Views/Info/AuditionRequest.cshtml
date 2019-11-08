@@ -1,0 +1,33 @@
+﻿@model ESBCommunitySite.Models.PotentialMember
+
+@{
+    Layout = "_Layout_Info";
+    ViewBag.Title = "Audition Request";
+}
+<! DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div class="text-center">
+        <h2>Message Form</h2>
+    </div>
+    <form method="post">
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" />
+        </div>
+        <div>
+            <label asp-for="Instrument">Instrument</label>
+            <input asp-for="Instrument" />
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>

@@ -49,7 +49,11 @@ namespace ESBCommunitySite.Controllers
             mail.Reverse();
             return View(mail);
         }
-
+        // new Controller method return #1 - String
+        public String ConductorMessage()
+        {
+            return "Hello, Eugene-Springfield community! I am proud to conduct the Eugene Symphonic Band. Get up-to-date information on the ESB on this website.";
+        }
         // Error method
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

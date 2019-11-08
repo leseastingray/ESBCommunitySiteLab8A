@@ -2,7 +2,7 @@
 
 @{
     Layout = "_Layout_Info";
-    ViewBag.Title = "Roster - Eugene Symphonic Band Community Site";
+    ViewData["Title"] = "Roster - Eugene Symphonic Band Community Site";
 }
 
 <!DOCTYPE html>
@@ -39,11 +39,11 @@
                 <tbody>
                         @foreach (Member member in Model)
                         {
-                        <tr>
-                        <td>@member.Name</td>
-                        <td>@member.DateJoined</td>
-                        <td>@member.Instrument</td>
-                        </tr>
+                            <tr>
+                            <td>@member.Name</td>
+                            <td>@member.DateJoined</td>
+                            <td>@member.Instrument</td>
+                            </tr>
                         }
                 </tbody>
             </table>

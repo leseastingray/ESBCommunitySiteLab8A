@@ -39,3 +39,13 @@
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab4A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.dll
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab4A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.pdb
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab4A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.csproj.CopyComplete
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.csprojAssemblyReference.cache
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.RazorAssemblyInfo.cache
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.RazorAssemblyInfo.cs
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.AssemblyInfoInputs.cache
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.AssemblyInfo.cs
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.TagHelpers.input.cache
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.TagHelpers.output.cache
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.RazorCoreGenerate.cache
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.dll
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/Release/netcoreapp2.2/ESBCommunitySite.pdb

@@ -1,8 +1,6 @@
-﻿@model IEnumerable<ESBCommunitySite.Models.Member>
-
-@{
+﻿@{
     Layout = "_Layout_Info";
-    ViewBag.Title = "Roster - Eugene Symphonic Band Community Site";
+    ViewData["Title"] = "Roster - Eugene Symphonic Band Community Site";
 }
 <!DOCTYPE html>
 <html>
@@ -28,7 +26,7 @@
     <div>
         ROSTER BY INSTRUMENT UNDERCONSTRUCTION. SEE ROSTER BY JOIN DATE
         <h4>Flutes</h4>
-        @foreach (Member flute in Model.FilterByInstrument("flute"))
+        @foreach (Member flute in ViewBag.flutes)
         {
             <p>
                 @flute.Name
@@ -37,7 +35,7 @@
             </p>
         }
         <h4>Clarinets</h4>
-        @foreach (Member clarinet in Model.FilterByInstrument("clarinet"))
+        @foreach (Member clarinet in ViewBag.clarinets)
         {
             <p>
                 @clarinet.Name
@@ -46,7 +44,7 @@
             </p>
         }
         <h4>Trumpets</h4>
-        @foreach (Member trumpet in Model.FilterByInstrument("trumpet"))
+        @foreach (Member trumpet in ViewBag.trumpets)
         {
             <p>
                 @trumpet.Name
@@ -55,7 +53,7 @@
             </p>
         }
         <h4>Trombones</h4>
-        @foreach (Member trombone in Model.FilterByInstrument("trombone"))
+        @foreach (Member trombone in ViewBag.trombones)
         {
             <p>
                 @trombone.Name
