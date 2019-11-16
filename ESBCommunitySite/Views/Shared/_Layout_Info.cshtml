@@ -16,6 +16,14 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="History">History</a>
+        <a asp-controller="Home" asp-action="Contact">Contact</a>
+        <a asp-controller="Info" asp-action="Info">Information</a>
+        <a asp-controller="Info" asp-action="Location">Location</a>
+        <a asp-controller="Info" asp-action="RosterByJoinDate">Roster</a>
+    </nav>
     <div id="infoDiv">
         @RenderBody()
     </div>

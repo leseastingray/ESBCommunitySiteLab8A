@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="text-center">
-        <h2>Message Form</h2>
+        <h2>Audition Request</h2>
     </div>
     <form method="post">
         <div asp-validation-summary="All"></div>
@@ -25,6 +25,10 @@
         <div>
             <label asp-for="Instrument">Instrument</label>
             <input asp-for="Instrument" />
+        </div>
+        <div>
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" />
         </div>
         <button type="submit">Send</button>
     </form>

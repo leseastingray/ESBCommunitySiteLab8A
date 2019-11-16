@@ -18,6 +18,13 @@ namespace ESBCommunitySite.Controllers
         {
             return View();
         }
+        // new Controller method #1 - returns Json of past year's concerts
+        public JsonResult ConcertHistory2018()
+        {
+            return Json(new[] {"Fall 2018 Concert: November 4th, 3:30pm",
+                "Winter 2019 Concert: March 3rd, 3:30pm", "Outreach 2019 Concert: March 4th, 7:30pm",
+                "Spring 2019 Concert: May 19th, 3:30pm"});
+        }
         // CONTACT/MAIL METHODS
         // Contact get method
         [HttpGet]
@@ -49,16 +56,10 @@ namespace ESBCommunitySite.Controllers
             mail.Reverse();
             return View(mail);
         }
-        // new Controller method return #1 - String
+        // new Controller method #2 - returns string of message from conductor
         public String ConductorMessage()
         {
             return "Hello, Eugene-Springfield community! I am proud to conduct the Eugene Symphonic Band. Get up-to-date information on the ESB on this website.";
-        }
-        // Error method
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

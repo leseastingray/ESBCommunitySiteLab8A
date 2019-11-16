@@ -13,6 +13,8 @@ namespace ESBCommunitySite.Models
         public string Name { get; set; }
         [Required(ErrorMessage = "Please enter your primary instrument")]
         public string Instrument { get; set; }
+        [Required(ErrorMessage = "Please enter your email")]
+        public string Email { get; set; }
         public DateTime RequestDate { get; set; }
     }
 }

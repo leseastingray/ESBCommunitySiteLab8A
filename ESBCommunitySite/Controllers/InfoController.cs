@@ -14,12 +14,17 @@ namespace ESBCommunitySite.Controllers
         {
             return View();
         }
-        // new Controller method #3 - returns IActionResult
-        public IActionResult AuditionRequest()
+        // new Controller method #3 - returns Json of current personnel needs
+        public JsonResult CurrentNeeds()
+        {
+            return Json(new object[] {"Oboes: 1", "Saxophones: 1", "Trumpets: 3",
+            "Euphoniums: 2", "Tubas: 1", "Percussion: 4"});
+        }
+        public ViewResult AuditionRequest()
         {
             return View();
         }
-        // new Controller method #2 - returns RedirectToAction
+        // new Controller method #4 - returns RedirectToAction after form post
         [HttpPost]
         public RedirectToActionResult AuditionRequest(string name, string instrument, DateTime requestDate)
         {

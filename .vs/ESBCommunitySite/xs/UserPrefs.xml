@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{B7E038DC-4685-4664-8234-6EACAA9E69DF}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ESBCommunitySite/Controllers/InfoController.cs">
     <Files>
-      <File FileName="ESBCommunitySite/Views/Info/Roster.cshtml" Line="55" Column="27" />
-      <File FileName="ESBCommunitySite/Views/Info/AuditionRequest.cshtml" Line="7" Column="17" />
-      <File FileName="ESBCommunitySite/Controllers/InfoController.cs" Line="17" Column="37" />
+      <File FileName="ESBCommunitySite/Controllers/InfoController.cs" Line="21" Column="60" />
+      <File FileName="ESBCommunitySite/Views/Home/Index.cshtml" Line="11" Column="11" />
+      <File FileName="ESBCommunitySite/Controllers/HomeController.cs" Line="21" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,6 +21,7 @@
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Info" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True" />
             </Node>
