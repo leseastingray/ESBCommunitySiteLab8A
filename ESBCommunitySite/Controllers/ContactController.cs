@@ -4,13 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ESBCommunitySite.Models;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using ESBCommunitySite.Repositories;
 
 namespace ESBCommunitySite.Controllers
 {
     public class ContactController : Controller
     {
+        // declaration of repo (works for both children)
+        IMailRepository repo;
+        public ContactController(IMailRepository r)
+        {
+            repo = r;
+        }
+
         // CONTACT/MAIL METHODS
         // Contact get method
         [HttpGet]

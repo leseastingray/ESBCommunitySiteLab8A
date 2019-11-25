@@ -16,8 +16,14 @@ namespace ESBCommunitySiteTests
         public void ContactTest()
         {
             // Arrange
-            // Act
-            // Assert
+            var repo = new FakeMailRepository();
+            var contactController = new ContactController(repo);
+            // Act - get a list of messages in the correct order
+            var result = (ViewResult)contactController.Contact();
+            var messages = (List<MessageInfo>)result.Model;
+            // Assert that the messages are in the correct order and also
+            // that there are the same amount of messages
+            //Assert.True();
         }
 
         // Check that GetMailByPriority returns list of MessageInfo objects by priority
@@ -27,6 +33,23 @@ namespace ESBCommunitySiteTests
             // Arrange
             // Act
             // Assert
+        }
+
+        // Method to add test messages
+        private void AddMessage(FakeMailRepository repo)
+        {
+            // Test message 1
+            MessageInfo message1 = new MessageInfo()
+            {
+                Recipient = "Loren Berry",
+                MessageText = "",
+                Sender = "",
+                MessagePriority = "1",
+                MessageDate = DateTime.Now
+            };
+            // Add test message 1 to the repo
+            repo.AddMail(message1);
+            // Test message 2
         }
     }
 }
