@@ -11,6 +11,18 @@ namespace ESBCommunitySiteTests
     // This set of tests works with the ContactController
     public class ContactTests
     {
+        // Check AddMail (if we have it in the ContactController)
+        [Fact]
+        public void AddMailTest()
+        {
+            // Arrange
+            var repo = new FakeMailRepository();
+            var contactController = new ContactController(repo);
+            // Act
+            // contactController.AddMail(Recipient, MessageText, Sender, MessagePriority, MessageDate);
+            // Assert
+            // Assert.Equal(Recipient, repo.Messages[repo.Messages.Count - 1].Recipient);
+        }
         // Check GetMail HttpPost method adds a MessageInfo object to the repository
         [Fact]
         public void ContactTest()
@@ -42,14 +54,35 @@ namespace ESBCommunitySiteTests
             MessageInfo message1 = new MessageInfo()
             {
                 Recipient = "Loren Berry",
-                MessageText = "",
-                Sender = "",
-                MessagePriority = "1",
+                MessageText = "Do you and I need both mutes for rehearsal tonight?",
+                Sender = "Amy Lese",
+                MessagePriority = "2",
                 MessageDate = DateTime.Now
             };
             // Add test message 1 to the repo
             repo.AddMail(message1);
             // Test message 2
+            MessageInfo message2 = new MessageInfo()
+            {
+                Recipient = "Sherry Cosey",
+                MessageText = "Please let the conductor know that I won't be at rehearsal tonight.",
+                Sender = "David Holmes",
+                MessagePriority = "3",
+                MessageDate = DateTime.Now
+            };
+            // Add test message 2 to the repo
+            repo.AddMail(message2);
+            // Test message 3
+            MessageInfo message3 = new MessageInfo()
+            {
+                Recipient = "David Holmes",
+                MessageText = "Will you have a sub player coming in your place tonight?",
+                Sender = "Steve Maricle",
+                MessagePriority = "1",
+                MessageDate = DateTime.Now
+            };
+            // Add test message 3 to the repo
+            repo.AddMail(message3);
         }
     }
 }
