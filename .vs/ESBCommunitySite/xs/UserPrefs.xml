@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{B7E038DC-4685-4664-8234-6EACAA9E69DF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ESBCommunitySite/Controllers/InfoController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../usr/local/share/dotnet/sdk/3.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets">
     <Files>
-      <File FileName="ESBCommunitySite/Controllers/InfoController.cs" Line="21" Column="60" />
-      <File FileName="ESBCommunitySite/Views/Home/Index.cshtml" Line="11" Column="11" />
-      <File FileName="ESBCommunitySite/Controllers/HomeController.cs" Line="21" Column="28" />
+      <File FileName="ESBCommunitySite/Models/MailBox.cs" Line="1" Column="1" />
+      <File FileName="ESBCommunitySite/Models/MessageInfo.cs" Line="1" Column="1" />
+      <File FileName="ESBCommunitySite/Repositories/MailRepository.cs" Line="22" Column="1" />
+      <File FileName="ESBCommunitySite/Repositories/FakeMailRepository.cs" Line="14" Column="1" />
+      <File FileName="ESBCommunitySite/Controllers/ContactController.cs" Line="13" Column="6" />
+      <File FileName="../../../../../usr/local/share/dotnet/sdk/3.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets" Line="187" Column="66" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ESBCommunitySite" expanded="True">
             <Node name="ESBCommunitySite" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True">
-                <Node name="InfoController.cs" selected="True" />
+                <Node name="ContactController.cs" selected="True" />
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
+              <Node name="Repositories" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Info" expanded="True" />

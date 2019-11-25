@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/ESBCommunitySite.csproj": {}
+    "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/ESBCommunitySite.csproj": {}
   },
   "projects": {
-    "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/ESBCommunitySite.csproj": {
+    "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/ESBCommunitySite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/ESBCommunitySite.csproj",
+        "projectUniqueName": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/ESBCommunitySite.csproj",
         "projectName": "ESBCommunitySite",
-        "projectPath": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/ESBCommunitySite.csproj",
+        "projectPath": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/ESBCommunitySite.csproj",
         "packagesPath": "/Users/amylese/.nuget/packages/",
-        "outputPath": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab5A/ESBCommunitySite/obj/",
+        "outputPath": "/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -40,10 +40,8 @@
         "netcoreapp2.2": {
           "dependencies": {
             "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
+              "version": "[2.2.8, )"
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
@@ -58,7 +56,15 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[3.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [

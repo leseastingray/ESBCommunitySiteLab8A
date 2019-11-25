@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ESBCommunitySite.Models.ContactInfo>
+﻿@model IEnumerable<ESBCommunitySite.Models.MessageInfo>
 
 @{
     ViewData["Title"] = "Mailbox";
@@ -24,14 +24,14 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (ContactInfo cI in Model)
+                @foreach (MessageInfo mI in Model)
                 {
                     <tr>
-                        <td class="info">@cI.Recipient</td>
-                        <td>@cI.MessageText</td>
-                        <td>@cI.MessagePriority</td>
-                        <td class="info">@cI.Sender</td>
-                        <td>@cI.MessageDate.ToString()</td>
+                        <td class="info">@mI.Recipient</td>
+                        <td>@mI.MessageText</td>
+                        <td>@mI.MessagePriority</td>
+                        <td class="info">@mI.Sender</td>
+                        <td>@mI.MessageDate.ToString()</td>
                     </tr>
                 }
             </tbody>

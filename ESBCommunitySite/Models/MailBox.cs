@@ -7,12 +7,12 @@ namespace ESBCommunitySite.Models
     public static class MailBox
     {
         // list for collection of contactinfo (messages)
-        public static List<ContactInfo> mail = new List<ContactInfo>();
+        public static List<MessageInfo> mail = new List<MessageInfo>();
 
-        public static List<ContactInfo> Messages { get { return mail; } }
+        public static List<MessageInfo> Messages { get { return mail; } }
 
         // enable enumeration
-        public static IEnumerable<ContactInfo> Mail
+        public static IEnumerable<MessageInfo> Mail
         {
             get
             {
@@ -21,7 +21,7 @@ namespace ESBCommunitySite.Models
         }
 
         // method to add contactinfo (messages) to mail list
-        public static void AddMail(ContactInfo contactInfo)
+        public static void AddMail(MessageInfo contactInfo)
         {
             mail.Add(contactInfo);
         }
