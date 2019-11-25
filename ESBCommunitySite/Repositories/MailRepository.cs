@@ -34,6 +34,14 @@ namespace ESBCommunitySite.Repositories
             }
             return messages;
         }
+        // enable enumeration
+        public static IEnumerable<MessageInfo> Mail
+        {
+            get
+            {
+                return messages;
+            }
+        }
         // this is for hardcoded data in lieu of database
         private void AddSeedData()
         {

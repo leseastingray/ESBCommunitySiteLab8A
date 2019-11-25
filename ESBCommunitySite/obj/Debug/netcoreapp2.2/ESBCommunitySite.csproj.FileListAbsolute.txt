@@ -322,9 +322,6 @@ C:/Users/Student/Documents/RiverRay/ESBCommunitySiteLab4A/ESBCommunitySite/obj/D
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.TagHelpers.input.cache
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.TagHelpers.output.cache
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.RazorCoreGenerate.cache
-/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/Contact.cshtml.g.cs
-/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/GetMail.cshtml.g.cs
-/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/GetPriorityMail.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/History.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.cshtml.g.cs
@@ -346,3 +343,6 @@ C:/Users/Student/Documents/RiverRay/ESBCommunitySiteLab4A/ESBCommunitySite/obj/D
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.dll
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.pdb
 /Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/ESBCommunitySite.csproj.CopyComplete
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Contact/Contact.cshtml.g.cs
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Contact/GetMail.cshtml.g.cs
+/Users/amylese/Documents/ASP.NET/ESBCommunitySiteLab7A/ESBCommunitySite/obj/Debug/netcoreapp2.2/Razor/Views/Contact/GetPriorityMail.cshtml.g.cs

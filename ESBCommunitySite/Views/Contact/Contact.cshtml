@@ -1,0 +1,48 @@
+﻿@model ESBCommunitySite.Models.MessageInfo;
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<! DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <div class="text-center">
+        <h2>Message Form</h2>
+    </div>
+    <form asp-action="Contact" method="post">
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="Recipient">Recipient Name</label>
+            <input asp-for="Recipient" />
+        </div>
+        <div>
+            <label asp-for="MessageText">Message Text</label>
+            <textarea asp-for="MessageText"></textarea>
+        </div>
+        <div>
+            <label>Message Priority</label>
+            <select asp-for="MessagePriority">
+                <option value="0">No Priority</option>
+                <option value="1">Low Priority</option>
+                <option value="2">Medium Priority</option>
+                <option value="3">High Priority</option>
+            </select>
+        </div>
+        <div>
+            <label asp-for="Sender">Sender Name</label>
+            <input asp-for="Sender" />
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
+    <div>Click <a asp-action="GetMail">here</a> to view your mailbox of sent and
+        received messages</div>
+</body>
+</html>

@@ -27,5 +27,13 @@ namespace ESBCommunitySite.Repositories
             }
             return messages;
         }
+        // enable enumeration
+        public static IEnumerable<MessageInfo> Mail
+        {
+            get
+            {
+                return messages;
+            }
+        }
     }
 }
