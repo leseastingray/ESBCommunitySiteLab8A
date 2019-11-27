@@ -7,6 +7,8 @@ namespace ESBCommunitySite.Models
 {
     public class Member
     {
+        // ID for primary key
+        public int MemberID { get; set; }
         public string Name { get; set; }
         public string Instrument { get; set; }
         public string DateJoined { get; set; }

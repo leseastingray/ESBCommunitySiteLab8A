@@ -11,44 +11,64 @@ namespace ESBCommunitySiteTests
     // This set of tests works with the ContactController
     public class ContactTests
     {
-        // Check AddMail (if we have it in the ContactController)
-        [Fact]
-        public void AddMailTest()
-        {
-            // Arrange
-            var repo = new FakeMailRepository();
-            var contactController = new ContactController(repo);
-            // Act
-            // contactController.AddMail(Recipient, MessageText, Sender, MessagePriority, MessageDate);
-            // Assert
-            // Assert.Equal(Recipient, repo.Messages[repo.Messages.Count - 1].Recipient);
-        }
-        // Check GetMail HttpPost method adds a MessageInfo object to the repository
+        // Check Contact HttpPost method adds a MessageInfo object
         [Fact]
         public void ContactTest()
         {
             // Arrange
             var repo = new FakeMailRepository();
             var contactController = new ContactController(repo);
-            // Act - get a list of messages in the correct order
-            var result = (ViewResult)contactController.Contact();
-            var messages = (List<MessageInfo>)result.Model;
-            // Assert that the messages are in the correct order and also
-            // that there are the same amount of messages
-            //Assert.True();
+            var testMessage = new MessageInfo()
+            {
+                Recipient = "Steve Maricle",
+                MessageText = "Have you talked to FB about the Winter Concert time?",
+                Sender = "David Holmes",
+                MessagePriority = "3",
+                //MessageDate = new DateTime(2019, 9, 15, 10, 0, 0, 0)
+            };
+            // Act
+            contactController.Contact(testMessage);
+            // Assert
+            Assert.Equal("Steve Maricle", repo.Messages[repo.Messages.Count - 1].Recipient);
         }
-
+        // Check GetMail HttpGet method returns list of sorted MessageInfo objects
+        [Fact]
+        public void GetMailTest()
+        {
+            // Arrange
+            var repo = new FakeMailRepository();
+            AddTestMessages(repo);
+            var contactController = new ContactController(repo);
+            // Act - get a list of messages in the correct order
+            var result = (ViewResult)contactController.GetMail();
+            var messages = (List<MessageInfo>)result.Model;
+            // Assert that the messages are in the correct order by DateTime and also
+            // that there are the same amount of messages, s1 > s2 returns -1
+            Assert.True(DateTime.Compare(messages[0].MessageDate, messages[1].MessageDate) < 0 &&
+                        DateTime.Compare(messages[1].MessageDate, messages[2].MessageDate) < 0);
+        }
+        // TODO: Fix! this test is passing sometimes, failing when used with the other tests.
         // Check that GetMailByPriority returns list of MessageInfo objects by priority
         [Fact]
         public void GetPriorityMailTest()
         {
             // Arrange
+            var repo = new FakeMailRepository();
+            if (repo.Messages.Count <= 1)
+            {
+                AddTestMessages(repo);
+            }
+            var contactController = new ContactController(repo);
             // Act
-            // Assert
+            var result = (ViewResult)contactController.GetPriorityMail();
+            var messages = (List<MessageInfo>)result.Model;
+            // Assert - Check that the list is in priority order, s2 > s1 returns 1
+            Assert.True(String.Compare(messages[0].MessagePriority, messages[1].MessagePriority) > 0 &&
+                        String.Compare(messages[1].MessagePriority, messages[2].MessagePriority) > 0);
         }
 
         // Method to add test messages
-        private void AddMessage(FakeMailRepository repo)
+        private void AddTestMessages(FakeMailRepository repo)
         {
             // Test message 1
             MessageInfo message1 = new MessageInfo()

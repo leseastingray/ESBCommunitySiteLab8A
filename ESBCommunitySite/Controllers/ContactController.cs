@@ -30,20 +30,20 @@ namespace ESBCommunitySite.Controllers
         {
             // stores contact messages
             messageInfo.MessageDate = DateTime.Now;
-            MailBox.AddMail(messageInfo);
+            repo.AddMail(messageInfo);
             return View();
         }
         // sort mail by date 
         public ViewResult GetMail()
         {
-            List<MessageInfo> mail = MailBox.Messages;
+            List<MessageInfo> mail = repo.Messages;
             mail.Sort((m1, m2) => DateTime.Compare(m1.MessageDate, m2.MessageDate));
             return View(mail);
         }
         // sort mail by priority
         public ViewResult GetPriorityMail()
         {
-            List<MessageInfo> mail = MailBox.Messages;
+            List<MessageInfo> mail = repo.Messages;
             mail.Sort((m1, m2) => string.Compare(m1.MessagePriority, m2.MessagePriority, StringComparison.Ordinal));
             mail.Reverse();
             return View(mail);
