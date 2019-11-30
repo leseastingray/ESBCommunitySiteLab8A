@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{B7E038DC-4685-4664-8234-6EACAA9E69DF}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ESBCommunitySiteTests/ContactTests.cs">
     <Files>
-      <File FileName="ESBCommunitySite/Repositories/MailRepository.cs" Line="41" Column="14" />
-      <File FileName="ESBCommunitySite/Repositories/IMailRepository.cs" Line="11" Column="65" />
-      <File FileName="ESBCommunitySiteTests/UnitTest1.cs" Line="29" Column="22" />
-      <File FileName="ESBCommunitySite/Controllers/ContactController.cs" Line="44" Column="10" />
+      <File FileName="ESBCommunitySiteTests/ContactTests.cs" Line="50" Column="88" />
+      <File FileName="ESBCommunitySite/Controllers/ContactController.cs" Line="47" Column="20" />
+      <File FileName="ESBCommunitySite/Repositories/FakeMailRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,10 +11,9 @@
           <Node name="ESBCommunitySite" expanded="True">
             <Node name="ESBCommunitySite" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Repositories" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Contact" expanded="True" />
-              </Node>
+              <Node name="Views" expanded="True" />
             </Node>
             <Node name="ESBCommunitySiteTests" expanded="True">
               <Node name="Dependencies" expanded="True" />
@@ -24,16 +22,27 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="ESBCommunitySite" expanded="True" selected="True">
+            <Node name="ESBCommunitySiteTests" expanded="True">
+              <Node name="ESBCommunitySiteTests" expanded="True">
+                <Node name="ContactTests" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ESBCommunitySiteTests FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.ESBCommunitySite PreferredExecutionTarget="/Applications/Firefox Nightly.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/usr/local/share/dotnet/sdk/3.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets" line="187" column="65" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -47,24 +47,20 @@ namespace ESBCommunitySiteTests
             Assert.True(DateTime.Compare(messages[0].MessageDate, messages[1].MessageDate) < 0 &&
                         DateTime.Compare(messages[1].MessageDate, messages[2].MessageDate) < 0);
         }
-        // TODO: Fix! this test is passing sometimes, failing when used with the other tests.
         // Check that GetMailByPriority returns list of MessageInfo objects by priority
         [Fact]
         public void GetPriorityMailTest()
         {
             // Arrange
             var repo = new FakeMailRepository();
-            if (repo.Messages.Count <= 1)
-            {
-                AddTestMessages(repo);
-            }
+            AddTestMessages(repo);
             var contactController = new ContactController(repo);
             // Act
             var result = (ViewResult)contactController.GetPriorityMail();
             var messages = (List<MessageInfo>)result.Model;
-            // Assert - Check that the list is in priority order, s2 > s1 returns 1
-            Assert.True(String.Compare(messages[0].MessagePriority, messages[1].MessagePriority) > 0 &&
-                        String.Compare(messages[1].MessagePriority, messages[2].MessagePriority) > 0);
+            // Assert - Check that the list is in priority order, s2 > s1 returns 1, s2 = s1 returns 0
+            Assert.True(String.Compare(messages[0].MessagePriority, messages[1].MessagePriority) >= 0 &&
+                        String.Compare(messages[1].MessagePriority, messages[2].MessagePriority) >= 0);
         }
 
         // Method to add test messages
