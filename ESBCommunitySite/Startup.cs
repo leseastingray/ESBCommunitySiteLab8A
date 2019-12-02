@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ESBCommunitySite.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace ESBCommunitySite
 {
@@ -33,6 +35,14 @@ namespace ESBCommunitySite
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            // DATABASE AND EF ADDITIONS
+            // Dependency injection for repositories
+            services.AddTransient<IMailRepository, MailRepository>();
+
+            // Configure EF for Windows with SQL Server
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
+                Configuration["ConnectionStrings:MsSqlConnection"]));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

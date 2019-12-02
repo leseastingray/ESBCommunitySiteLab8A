@@ -9,6 +9,8 @@ namespace ESBCommunitySite.Models
 {
     public class PotentialMember
     {
+        // ID for primary key
+        public int PotentialMemberID { get; set; }
         [Required(ErrorMessage = "Please enter your name")]
         public string Name { get; set; }
         [Required(ErrorMessage = "Please enter your primary instrument")]
